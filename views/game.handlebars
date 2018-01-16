@@ -1,0 +1,63 @@
+<script src="/js/socket.io/socket.io.js"></script>
+<script type="text/javascript">
+    username = '{{username}}';
+    console.log(username);
+</script>
+<script src="/js/gameUI.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
+
+<div class="jumbotron game-jumbo">
+    <div class="container" id="game-container">
+    <div class="row card-row">
+        <div class="card col-xs-3"><div class='card-contents' data-value=0>M!</div></div>
+        <div class="card col-xs-3"><div class='card-contents' data-value=1>M!</div></div>
+        <div class="card col-xs-3"><div class='card-contents' data-value=2>M!</div></div>
+        <div class="card col-xs-3"><div class='card-contents' data-value=3>M!</div></div>
+    </div>
+    <div class="row card-row">
+        <div class="card col-xs-3"><div class='card-contents' data-value=4>M!</div></div>
+        <div class="card col-xs-3"><div class='card-contents' data-value=5>M!</div></div>
+        <div class="card col-xs-3"><div class='card-contents' data-value=6>M!</div></div>
+        <div class="card col-xs-3"><div class='card-contents' data-value=7>M!</div></div>
+    </div>
+    <div class="row card-row">
+        <div class="card col-xs-3"><div class='card-contents' data-value=8>M!</div></div>
+        <div class="card col-xs-3"><div class='card-contents' data-value=9>M!</div></div>
+        <div class="card col-xs-3"><div class='card-contents' data-value=10>M!</div></div>
+        <div class="card col-xs-3"><div class='card-contents' data-value=11>M!</div></div>
+    </div>
+    <div class="row card-row">
+        <div class="card col-xs-3"><div class='card-contents' data-value=12>M!</div></div>
+        <div class="card col-xs-3"><div class='card-contents' data-value=13>M!</div></div>
+        <div class="card col-xs-3"><div class='card-contents' data-value=14>M!</div></div>
+        <div class="card col-xs-3"><div class='card-contents' data-value=15>M!</div></div>
+    </div>
+
+    </div>
+    <div class="row status-row" id="status-container">
+        <div class='panel' id="status"></div>
+    </div>
+    <div class="container" id="results-container">
+        <div class="jumbotron">
+            <h1>Results</h1>
+            <p class="lead" id="results-winner"></p>
+            <p class="lead" id="results-score"></p>
+            <p><a class="btn btn-lg btn-success" href="../" role="button">Leave Game</a></p>
+        </div>
+    </div>
+    
+</div>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <ul class="list-group" id="messagesBox"></ul>
+</body>
+
+    
+    <div class="input-group">
+        <input type="text" class="form-control" id="messageInput" placeholder="Enter Message">
+        <span class="input-group-btn">
+        <button id="messageButton" class="btn btn-success" type="button">Submit!</button>
+        </span>
+    </div><!-- /input-group -->
+
+<br></br>
